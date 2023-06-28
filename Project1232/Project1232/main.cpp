@@ -55,6 +55,12 @@ int main()
 	cout << " names.at(0) => " <<  names.at(0) << endl;
 	*pointer = names.at(1);
 	cout << " *pointer = names.at(1) , output =>" << * pointer << endl;
+
+	int* ptr = nullptr;
+	ptr = new int;  // allocate an integer on the heap
+	*ptr = 200;
+	cout << "garbage data " << ptr << endl;
+	cout << "value of ptr " << *ptr << endl;
 	  
 	return 0;
 }
